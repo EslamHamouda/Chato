@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "238109500721",
+    "project_id": "chato-3e519",
+    "storage_bucket": "chato-3e519.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238109500721:android:373120a78a15e52dadbc10",
+        "android_client_info": {
+          "package_name": "com.example.chato"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238109500721-evltgmphpbefdndp6o16m261svbr2njp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chato",
+            "certificate_hash": "ba13446791187798128b5a2638780a262337379e"
+          }
+        },
+        {
+          "client_id": "238109500721-kpp0dfm5rt42gqk9iras53tmkepk2vd7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiA4Lw4jK-nNECqtAc9uzMOfOR4Hg_gVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "238109500721-kpp0dfm5rt42gqk9iras53tmkepk2vd7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
