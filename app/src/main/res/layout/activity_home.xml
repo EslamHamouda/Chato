@@ -68,6 +68,6 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/chat"
             app:layout_anchor="@id/bottomAppBar"
-            app:srcCompat="@drawable/ic_baseline_chat_white" />
+            app:srcCompat="@drawable/ic_baseline_chat" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
