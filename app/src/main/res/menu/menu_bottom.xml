@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/chatsFragment"
+        android:icon="@drawable/ic_baseline_chat"
+        android:title="@string/chat"
+        android:contentDescription="@string/chat"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/channelsFragment"
+        android:icon="@drawable/ic_baseline_groups"
+        android:title="@string/groups"
+        android:contentDescription="@string/groups"
+        app:showAsAction="ifRoom"
+        />
+</menu>
