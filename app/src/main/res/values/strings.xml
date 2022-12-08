@@ -1,3 +1,37 @@
 <resources>
     <string name="app_name">Chato</string>
+
+    <!--authentication-->
+    <string name="sign_in_cancelled">Sign In Cancelled</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="login_header">Login to\nGeneral app</string>
+    <string name="registration_header">Account\nRegistration</string>
+    <string name="new_user_registration">I\'m a new user. Registration</string>
+    <string name="login">Login</string>
+    <string name="forgot_password"><u>Forgot password?</u></string>
+    <string name="or">or</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="already_have_an_account">Already have an account? Login</string>
+    <string name="registration">Registration</string>
+    <string name="enter_your_location">Enter your Location</string>
+    <string name="enter_your_phone_number">Enter your Phone number</string>
+    <string name="enter_verification_code">Enter verification code</string>
+    <string name="confirm">Confirm</string>
+    <string name="code_not_received"><u>Code not received?</u></string>
+    <string name="verification_message">Please enter verification code sent to your email.</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="seven">7</string>
+    <string name="six">6</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="delete">delete</string>
+
 </resources>

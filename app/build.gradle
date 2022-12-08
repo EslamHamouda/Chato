@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.chato"
-        minSdk 22
+        minSdk 23
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -90,4 +90,13 @@ dependencies {
     // work manager Kotlin + coroutines
     def work_version = "2.7.1"
     implementation "androidx.work:work-runtime-ktx:$work_version"
+
+    // Pinview
+    implementation 'com.github.GoodieBag:Pinview:v1.4'
+
+    // sdp and ssp
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+
+
 }

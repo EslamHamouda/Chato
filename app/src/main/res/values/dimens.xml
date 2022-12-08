@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_0dp">0dp</dimen>
+    <dimen name="dimen_100dp">@dimen/_80sdp</dimen>
+    <dimen name="dimen_37dp">@dimen/_30sdp</dimen>
+    <dimen name="dimen_33dp">@dimen/_26sdp</dimen>
+    <dimen name="dimen_30dp">@dimen/_24sdp</dimen>
+    <dimen name="dimen_20dp">@dimen/_16sdp</dimen>
+    <dimen name="dimen_79dp">@dimen/_63sdp</dimen>
+    <dimen name="dimen_17dp">@dimen/_14sdp</dimen>
+    <dimen name="dimen_15dp">@dimen/_12sdp</dimen>
+    <dimen name="dimen_18dp">@dimen/_14sdp</dimen>
+
+    <dimen name="field_margin">18dp</dimen>
+    <dimen name="input_field_width">0dp</dimen>
+    <dimen name="input_field_height">52dp</dimen>
+    <dimen name="header_margin_top">59dp</dimen>
+    <dimen name="bottom_margin">51dp</dimen>
+    <dimen name="input_label_margin_start">21dp</dimen>
+    <dimen name="input_label_margin_bottom">1dp</dimen>
+    <dimen name="google_button_height">44dp</dimen>
+    <dimen name="field_corner_radius">8dp</dimen>
+    <dimen name="elevation">6dp</dimen>
+
+    <dimen name="input_text_size">12sp</dimen>
+    <dimen name="button_text_size">12sp</dimen>
+    <dimen name="label_text_size">12sp</dimen>
+    <dimen name="header_text_size">27sp</dimen>
+</resources>

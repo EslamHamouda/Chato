@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.authentication.VerificationFragment">
+
+    <TextView
+        android:id="@+id/header_text"
+        style="@style/header_text"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_verification_code"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/verification_message_text"
+        style="@style/text_label"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:alpha="0.6"
+        android:text="@string/verification_message"
+        app:layout_constraintBottom_toTopOf="@id/pin"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/header_text"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pin"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="68dp"
+        android:alpha="0.07"
+        app:cursorVisible="true"
+        app:forceKeyboard="false"
+        app:layout_constraintBottom_toTopOf="@id/confirm_button"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/verification_message_text"
+        app:password="false"
+        app:pinBackground="@drawable/pin_background"
+        app:pinHeight="58dp"
+        app:pinLength="4"
+        app:pinWidth="58dp"
+        app:splitWidth="16dp" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        style="@style/main_button"
+        android:text="@string/confirm"
+        app:layout_constraintBottom_toTopOf="@id/code_not_received"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/pin" />
+
+    <TextView
+        android:id="@+id/code_not_received"
+        style="@style/secondary_option"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="40dp"
+        android:alpha="0.3"
+        android:text="@string/code_not_received"
+        app:layout_constraintBottom_toTopOf="@id/one_button"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/confirm_button" />
+
+    <Button
+        android:id="@+id/one_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/one"
+        android:textColor="@color/almost_black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/four_button"
+        app:layout_constraintEnd_toStartOf="@id/two_button"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/code_not_received" />
+
+    <Button
+        android:id="@+id/two_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="118dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/two"
+        android:textColor="@color/almost_black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/five_button"
+        app:layout_constraintEnd_toStartOf="@id/three_button"
+        app:layout_constraintStart_toEndOf="@id/one_button"
+        app:layout_constraintTop_toTopOf="@id/one_button" />
+
+    <Button
+        android:id="@+id/three_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/three"
+        android:textColor="@color/almost_black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/six_button"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toEndOf="@id/two_button"
+        app:layout_constraintTop_toTopOf="@id/two_button" />
+
+    <Button
+        android:id="@+id/four_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/four"
+        android:textColor="@color/almost_black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/seven_button"
+        app:layout_constraintEnd_toStartOf="@id/five_button"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/one_button" />
+
+    <Button
+        android:id="@+id/five_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/five"
+        android:textColor="@color/almost_black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/eight_button"
+        app:layout_constraintEnd_toStartOf="@id/six_button"
+        app:layout_constraintStart_toEndOf="@id/four_button"
+        app:layout_constraintTop_toBottomOf="@id/two_button" />
+
+    <Button
+        android:id="@+id/six_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/six"
+        android:textColor="@color/almost_black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/nine_button"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toEndOf="@id/five_button"
+        app:layout_constraintTop_toBottomOf="@id/three_button" />
+
+    <Button
+        android:id="@+id/seven_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/seven"
+        android:textColor="@color/almost_black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/zero_button"
+        app:layout_constraintEnd_toStartOf="@id/eight_button"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/four_button" />
+
+    <Button
+        android:id="@+id/eight_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/eight"
+        android:textColor="@color/almost_black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/zero_button"
+        app:layout_constraintEnd_toStartOf="@id/nine_button"
+        app:layout_constraintStart_toEndOf="@id/seven_button"
+        app:layout_constraintTop_toBottomOf="@id/five_button" />
+
+    <Button
+        android:id="@+id/nine_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:text="@string/nine"
+        android:textColor="@color/almost_black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@id/delete_button"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toEndOf="@id/eight_button"
+        app:layout_constraintTop_toBottomOf="@id/six_button" />
+
+    <Button
+        android:id="@+id/zero_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/zero"
+        android:textColor="@color/almost_black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/delete_button"
+        app:layout_constraintStart_toEndOf="@id/seven_button"
+        app:layout_constraintTop_toBottomOf="@id/eight_button" />
+
+    <ImageButton
+        android:id="@+id/delete_button"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="@dimen/dimen_0dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/delete"
+        android:src="@drawable/delete_numpad"
+        app:layout_constraintBottom_toBottomOf="@id/zero_button"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toEndOf="@id/zero_button"
+        app:layout_constraintTop_toBottomOf="@id/nine_button" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dimen_20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dimen_20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

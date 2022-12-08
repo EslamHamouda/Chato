@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_gradient"
+    tools:context=".ui.authentication.RegisterFragment">
+
+    <TextView
+        android:id="@+id/header_text"
+        style="@style/header_text"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_header"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Email-->
+    <TextView
+        android:id="@+id/email_label_text"
+        style="@style/input_label"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_37dp"
+        android:labelFor="@id/email_inputLayout"
+        android:text="@string/email"
+        app:layout_constraintBottom_toTopOf="@id/email_inputLayout"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/header_text"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_inputLayout"
+        style="@style/input_layout"
+        android:layout_marginBottom="@dimen/field_margin"
+        app:endIconCheckable="false"
+        app:endIconDrawable="@drawable/check"
+        app:endIconMode="custom"
+        app:endIconTint="@null"
+        app:layout_constraintBottom_toTopOf="@id/password_label_text"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/email_label_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_editText"
+            style="@style/input_text"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Password-->
+    <TextView
+        android:id="@+id/password_label_text"
+        style="@style/input_label"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/password_inputLayout"
+        android:text="@string/password"
+        app:layout_constraintBottom_toTopOf="@id/password_inputLayout"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/email_inputLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_inputLayout"
+        style="@style/input_layout"
+        android:layout_marginBottom="@dimen/field_margin"
+        app:layout_constraintBottom_toTopOf="@id/location_label_text"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/password_label_text"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_editText"
+            style="@style/input_text"
+            android:autofillHints="password"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Location-->
+    <TextView
+        android:id="@+id/location_label_text"
+        style="@style/input_label"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/location_inputLayout"
+        android:text="@string/enter_your_location"
+        app:layout_constraintBottom_toTopOf="@id/location_inputLayout"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/password_inputLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/location_inputLayout"
+        style="@style/input_layout"
+        android:layout_marginBottom="@dimen/field_margin"
+        app:layout_constraintBottom_toTopOf="@id/phone_label_text"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/location_label_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/location_editText"
+            style="@style/input_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Phone-->
+    <TextView
+        android:id="@+id/phone_label_text"
+        style="@style/input_label"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/phone_inputLayout"
+        android:text="@string/enter_your_phone_number"
+        app:layout_constraintBottom_toTopOf="@id/phone_inputLayout"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/location_inputLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_inputLayout"
+        style="@style/input_layout"
+        app:layout_constraintBottom_toTopOf="@id/or_text"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/phone_label_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone_editText"
+            style="@style/input_text"
+            android:autofillHints="phone"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/line_start"
+        style="@style/or_line"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/or_text"
+        app:layout_constraintEnd_toStartOf="@id/or_text"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toTopOf="@id/or_text" />
+
+    <!--or-->
+    <TextView
+        android:id="@+id/or_text"
+        style="@style/text_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_18dp"
+        android:layout_marginBottom="@dimen/dimen_30dp"
+        android:text="@string/or"
+        app:layout_constraintBottom_toTopOf="@id/google_login_button"
+        app:layout_constraintEnd_toEndOf="@id/line_end"
+        app:layout_constraintStart_toStartOf="@id/line_start"
+        app:layout_constraintTop_toBottomOf="@id/phone_inputLayout" />
+
+    <View
+        android:id="@+id/line_end"
+        style="@style/or_line"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/or_text"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toEndOf="@id/or_text"
+        app:layout_constraintTop_toTopOf="@id/or_text" />
+
+    <ImageButton
+        android:id="@+id/google_login_button"
+        style="@style/google_signIn_button"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:contentDescription="@string/sign_in_with_google"
+        android:src="@drawable/google"
+        app:layout_constraintBottom_toTopOf="@id/registration_button"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/or_text" />
+
+    <Button
+        android:id="@+id/registration_button"
+        style="@style/main_button"
+        android:text="@string/registration"
+        app:layout_constraintBottom_toTopOf="@id/existing_user_text"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/google_login_button" />
+
+    <TextView
+        android:id="@+id/existing_user_text"
+        style="@style/secondary_option"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_17dp"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:text="@string/already_have_an_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/end_guideline"
+        app:layout_constraintStart_toStartOf="@id/start_guideline"
+        app:layout_constraintTop_toBottomOf="@id/registration_button" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dimen_20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dimen_20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
