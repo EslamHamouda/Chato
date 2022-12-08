@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="header_text">
+        <item name="android:layout_marginTop">@dimen/header_margin_top</item>
+        <item name="android:textColor">@color/almost_black</item>
+        <item name="android:textSize">@dimen/header_text_size</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="input_label">
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textSize">@dimen/input_text_size</item>
+        <item name="android:alpha">0.4</item>
+        <item name="android:layout_marginStart">@dimen/input_label_margin_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/input_label_margin_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/input_label_margin_bottom</item>
+        <item name="android:textColor">@color/almost_black</item>
+    </style>
+
     <style name="input_layout">
         <item name="android:layout_width">@dimen/input_field_width</item>
         <item name="android:layout_height">@dimen/input_field_height</item>
@@ -15,15 +32,10 @@
         <item name="boxStrokeWidthFocused">@dimen/dimen_0dp</item>
     </style>
 
-    <style name="input_label">
-        <item name="android:textSize">@dimen/input_text_size</item>
-        <item name="android:alpha">0.4</item>
-        <item name="android:layout_marginStart">@dimen/input_label_margin_start</item>
-        <item name="android:layout_marginBottom">@dimen/input_label_margin_bottom</item>
-        <item name="android:textColor">@color/almost_black</item>
-    </style>
-
     <style name="input_text">
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:paddingBottom">@dimen/dimen_0dp</item>
+        <item name="android:paddingTop">@dimen/dimen_0dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:textColor">@color/almost_black</item>
@@ -38,6 +50,7 @@
     </style>
 
     <style name="main_button">
+        <item name="android:fontFamily">@font/inter_medium</item>
         <item name="android:textSize">@dimen/button_text_size</item>
         <item name="backgroundTint">@null</item>
         <item name="android:layout_width">@dimen/dimen_0dp</item>
@@ -47,14 +60,8 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="header_text">
-        <item name="android:layout_marginTop">@dimen/header_margin_top</item>
-        <item name="android:textColor">@color/almost_black</item>
-        <item name="android:textSize">@dimen/header_text_size</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
     <style name="secondary_option">
+        <item name="android:fontFamily">@font/inter</item>
         <item name="android:alpha">0.4</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/almost_black</item>
@@ -62,6 +69,7 @@
     </style>
 
     <style name="text_label">
+        <item name="android:fontFamily">@font/inter</item>
         <item name="android:textColor">@color/almost_black</item>
         <item name="android:textSize">@dimen/label_text_size</item>
     </style>

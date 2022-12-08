@@ -25,7 +25,7 @@
         android:layout_width="@dimen/dimen_0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimen_100dp"
-        android:labelFor="@id/email_inputLayout"
+        android:labelFor="@id/email_editText"
         android:text="@string/email"
         app:layout_constraintBottom_toTopOf="@id/email_inputLayout"
         app:layout_constraintEnd_toEndOf="@id/end_guideline"
@@ -36,7 +36,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_inputLayout"
         style="@style/input_layout"
-        android:layout_marginBottom="@dimen/field_margin"
+        android:layout_marginBottom="@dimen/field_margin_vertical"
         app:endIconCheckable="false"
         app:endIconDrawable="@drawable/check"
         app:endIconMode="custom"
@@ -59,7 +59,7 @@
         style="@style/input_label"
         android:layout_width="@dimen/dimen_0dp"
         android:layout_height="wrap_content"
-        android:labelFor="@id/password_inputLayout"
+        android:labelFor="@id/password_editText"
         android:text="@string/password"
         app:layout_constraintBottom_toTopOf="@id/password_inputLayout"
         app:layout_constraintEnd_toEndOf="@id/end_guideline"
@@ -80,6 +80,7 @@
             android:id="@+id/password_editText"
             style="@style/input_text"
             android:autofillHints="password"
+            android:paddingTop="0dp"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 

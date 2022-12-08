@@ -25,7 +25,7 @@
         android:layout_width="@dimen/dimen_0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dimen_37dp"
-        android:labelFor="@id/email_inputLayout"
+        android:labelFor="@id/email_editText"
         android:text="@string/email"
         app:layout_constraintBottom_toTopOf="@id/email_inputLayout"
         app:layout_constraintEnd_toEndOf="@id/end_guideline"
@@ -36,7 +36,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_inputLayout"
         style="@style/input_layout"
-        android:layout_marginBottom="@dimen/field_margin"
+        android:layout_marginBottom="@dimen/field_margin_vertical"
         app:endIconCheckable="false"
         app:endIconDrawable="@drawable/check"
         app:endIconMode="custom"
@@ -59,7 +59,7 @@
         style="@style/input_label"
         android:layout_width="@dimen/dimen_0dp"
         android:layout_height="wrap_content"
-        android:labelFor="@id/password_inputLayout"
+        android:labelFor="@id/password_editText"
         android:text="@string/password"
         app:layout_constraintBottom_toTopOf="@id/password_inputLayout"
         app:layout_constraintEnd_toEndOf="@id/end_guideline"
@@ -69,7 +69,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password_inputLayout"
         style="@style/input_layout"
-        android:layout_marginBottom="@dimen/field_margin"
+        android:layout_marginBottom="@dimen/field_margin_vertical"
         app:layout_constraintBottom_toTopOf="@id/location_label_text"
         app:layout_constraintEnd_toEndOf="@id/end_guideline"
         app:layout_constraintStart_toStartOf="@id/start_guideline"
@@ -89,7 +89,7 @@
         style="@style/input_label"
         android:layout_width="@dimen/dimen_0dp"
         android:layout_height="wrap_content"
-        android:labelFor="@id/location_inputLayout"
+        android:labelFor="@id/location_editText"
         android:text="@string/enter_your_location"
         app:layout_constraintBottom_toTopOf="@id/location_inputLayout"
         app:layout_constraintEnd_toEndOf="@id/end_guideline"
@@ -99,7 +99,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/location_inputLayout"
         style="@style/input_layout"
-        android:layout_marginBottom="@dimen/field_margin"
+        android:layout_marginBottom="@dimen/field_margin_vertical"
         app:layout_constraintBottom_toTopOf="@id/phone_label_text"
         app:layout_constraintEnd_toEndOf="@id/end_guideline"
         app:layout_constraintStart_toStartOf="@id/start_guideline"
@@ -107,6 +107,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/location_editText"
+            android:inputType="text"
             style="@style/input_text" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -116,7 +117,7 @@
         style="@style/input_label"
         android:layout_width="@dimen/dimen_0dp"
         android:layout_height="wrap_content"
-        android:labelFor="@id/phone_inputLayout"
+        android:labelFor="@id/phone_editText"
         android:text="@string/enter_your_phone_number"
         app:layout_constraintBottom_toTopOf="@id/phone_inputLayout"
         app:layout_constraintEnd_toEndOf="@id/end_guideline"
@@ -181,7 +182,8 @@
         app:layout_constraintBottom_toTopOf="@id/registration_button"
         app:layout_constraintEnd_toEndOf="@id/end_guideline"
         app:layout_constraintStart_toStartOf="@id/start_guideline"
-        app:layout_constraintTop_toBottomOf="@id/or_text" />
+        app:layout_constraintTop_toBottomOf="@id/or_text"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/registration_button"
